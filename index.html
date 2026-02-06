@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>SimpleFlow – Sign Up</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<main class="page-container">
+
+  <section class="cards-wrapper">
+
+    <!-- LEFT CARD -->
+    <aside class="left-card">
+      <div class="left-center">
+        <h1>Welcome to SimpleFlow</h1>
+        <p>Your Gateway to Effortless Management.</p>
+      </div>
+
+      <div class="left-bottom">
+        <h2>Seamless Collaboration</h2>
+        <p>Effortlessly work together with your team in real-time.</p>
+      </div>
+    </aside>
+
+    <!-- RIGHT CARD -->
+    <section class="right-card">
+
+      <div class="form-top">
+        <div class="brand">
+           <span class="logo-shape"></span>
+           <span class="brand-text"><b>SimpleFlow</b></span>
+        </div>
+
+        <div class="tabs">
+          <button class="tab active">Sign Up</button>
+          <button class="tab">Sign In</button>
+        </div>
+
+        <form id="registerForm" novalidate="">
+
+          <div class="field">
+            <label>Username</label>
+            <input id="username" type="text" placeholder="Pick a Username">
+            <small class="error"></small>
+          </div>
+
+          <div class="field">
+            <label>Full Name</label>
+            <input id="fullName" type="text" placeholder="Enter Your Name">
+            <small class="error"></small>
+          </div>
+
+          <div class="field">
+            <label>Email</label>
+            <input id="email" type="email" placeholder="Enter Your Email Address">
+            <small class="error"></small>
+          </div>
+
+          <div class="field">
+            <div class="password-header">
+              <label>Password</label>
+              <a href="#" class="forgot">Forgot Password?</a>
+            </div>
+
+            <input id="password" type="password" placeholder="Enter Password">
+            <small class="error"></small>
+          </div>
+
+         <ul class="password-rules">
+  <li id="rule-strength">
+    <span class="check">✔</span>
+    <span class="text">Password strength: Weak</span>
+  </li>
+
+  <li data-rule="personal">
+    <span class="check">✔</span>
+    <span class="text">Cannot contain your name or email address</span>
+  </li>
+
+  <li data-rule="length">
+    <span class="check">✔</span>
+    <span class="text">At least 8 characters</span>
+  </li>
+
+  <li data-rule="symbol">
+    <span class="check">✔</span>
+    <span class="text">Contains a number or symbol</span>
+  </li>
+</ul>
+
+
+        <button id="submitBtn" type="submit" disabled="">Create Account</button>
+        <p id="successMessage"></p>
+        </form>
+      </div>
+
+      <p class="terms">
+        By signing up to create an account I accept Company’s
+        <a href="#">Terms of use</a> &amp; <a href="#">Privacy Policy</a>.
+      </p>
+
+    </section>
+
+  </section>
+
+</main>
+
+<script src="./js/script.js"></script>
+
+

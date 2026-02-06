@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  height: 100%;
+}
+
+.page-container {
+  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 38.4px;
+}
+
+.cards-wrapper {
+  display: flex;
+  height: 100%;
+  gap: 89.6px; 
+}
+
+/* LEFT CARD */
+.left-card {
+  width: 540.8px;
+  height: 100%;
+  top: 25.6px; 
+  left: 25.6px; 
+  padding: 38.4px; 
+  border-radius: 19.2px; 
+  color: #fff;
+  background: url("../assets/background.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-center {
+  text-align: center;
+  margin-top: 19.2px; 
+}
+
+.left-bottom {
+  text-align: center;
+}
+
+/* RIGHT CARD */
+.right-card {
+  width: 377.6px;
+  height: 100%;
+  top: 133.2px;
+  left: 720px; 
+  padding: 38.4px; 
+  background: #ffffff;
+  border-radius: 19.2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* BRAND */
+.brand {
+  font-size: 19.2px; 
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  height: 79.2px;
+  padding: 0.8px; 
+  margin: 0.8px; 
+}
+
+/* مربع اصلی */
+.logo-shape {
+  width: 19.2px; 
+  height: 19.2px; 
+  background: #ECF0FF;
+  border-radius: 3.2px; 
+  position: relative;
+  overflow: hidden;
+}
+
+/* نیم‌دایره سمت چپ */
+.logo-shape::before {
+  content: "";
+  position: absolute;
+  left: -5.6px; 
+  top: 0;
+  width: 16.8px; 
+  height: 19.2px; 
+  background: #465FF180;
+  border-radius: 50%;
+}
+/*نیم‌دایره داخلی (سفید) */
+.logo-shape::after {
+  content: "";
+  position: absolute;
+  left: -4px;      
+  top: 8px; 
+  width: 7.2px; 
+  height: 4.8px; 
+  background: #ECF0FF;
+  border-radius: 50%;
+}
+
+
+/* TABS */
+.tabs {
+  display: flex;
+  background: #ECF0FF;
+  border-radius: 8px; 
+  margin-bottom: 25.6px; 
+}
+
+.tab {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 12.8px;
+}
+
+.tab.active {
+  background: #465FF1;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+/* FORM */
+.field {
+  margin-bottom: 12.8px; 
+}
+
+label {
+  font-size: 12.8px; 
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  height: 35.2px; 
+  margin-top: 4.8px; 
+  padding: 0 9.6px; 
+  border-radius: 6.4px; 
+  border: 1.2px solid #465FF166; 
+  outline: none;
+  box-shadow: 0 2.4px 2.4px rgba(87, 81, 203, 0.06); 
+}
+
+input:focus {
+  border-color: #465FF1;
+  box-shadow: 0 0 0 2.4px rgba(43, 68, 208, 0.15); 
+}
+
+input.error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 2.4px rgba(239,68,68,0.15); 
+}
+
+input.success {
+  border-color: #22c55e;
+}
+
+.password-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot {
+  font-size: 9.6px; 
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.error {
+  font-size: 8.8px;
+  color: #ef4444;
+  min-height: 9.6px; 
+}
+
+/* PASSWORD RULES */
+.password-rules {
+  list-style: none;
+  margin-top: 9.6px; 
+}
+
+.password-rules li {
+  display: flex;
+  align-items: center;
+  gap: 6.4px; 
+  font-size: 9.6px;
+  color: #494949;
+  margin-bottom: 8px;
+}
+
+.password-rules .check {
+  font-size: 9.6px;
+  color: #ECF0FF;
+}
+
+.password-rules li.valid {
+  color: #22c55e;
+}
+
+.password-rules li.valid .check {
+  color: #22c55e;
+}
+
+
+/* BUTTON */
+button {
+  width: 100%;
+  height: 38.4px; 
+  padding: 0.8px; 
+  border-radius: 8.8px;
+  border: none;
+  background: #465FF1B2;
+  color: #fff;
+  font-size: 12.8px;
+}
+
+button.enabled {
+  background: #465FF1;
+  cursor: pointer;
+}
+
+#successMessage {
+  margin-top: 12.8px; 
+  font-size: 14.4px;
+  color: #22c55e;
+  text-align: center;
+  display: none;
+}
+
+/* TERMS */
+.terms {
+  font-size: 10.4px; 
+  color: #6b7280;
+  text-align: center;
+  margin-top: 19.2px; 
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .left-card,
+  .right-card {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  
+  .page-container {
+    padding: 16px;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+}
