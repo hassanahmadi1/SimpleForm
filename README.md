@@ -36,7 +36,7 @@ SimpleForm/
 ```
 
 ## 🚀 نحوه اجرا
-1. **دریاخت پروژه**
+1. **دریافت پروژه**
    ```bash
    git clone https://github.com/hassanahmadi1/SimpleForm.git
    cd SimpleForm
